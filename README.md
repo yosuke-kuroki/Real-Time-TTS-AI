@@ -14,10 +14,6 @@ RealtimeTTS is a state-of-the-art text-to-speech (TTS) library designed for real
 
 > **Important:** [Installation](#installation) has changed to allow more customization. Please use `pip install realtimetts[all]` instead of `pip install realtimetts` now. More [info here](#installation).
 
-> **Hint:** *<strong>Check out [Linguflex](https://github.com/KoljaB/Linguflex)</strong>, the original project from which RealtimeTTS is spun off. It lets you control your environment by speaking and is one of the most capable and sophisticated open-source assistants currently available.*
-
-https://github.com/KoljaB/RealtimeTTS/assets/7604638/87dcd9a5-3a4e-4f57-be45-837fc63237e7
-
 ## Key Features
 
 - **Low Latency**
@@ -32,8 +28,6 @@ https://github.com/KoljaB/RealtimeTTS/assets/7604638/87dcd9a5-3a4e-4f57-be45-837
   - ensures continuous operation through a fallback mechanism
   - switches to alternative engines in case of disruptions guaranteeing consistent performance and reliability, which is vital for critical and professional use cases
 
-> **Hint**: *check out [RealtimeSTT](https://github.com/KoljaB/RealtimeSTT), the input counterpart of this library, for speech-to-text capabilities. Together, they form a powerful realtime audio wrapper around large language models.*
-
 ## FAQ
 
 Check the [FAQ page](./FAQ.md) for answers to a lot of questions around the usage of RealtimeTTS.
@@ -42,15 +36,15 @@ Check the [FAQ page](./FAQ.md) for answers to a lot of questions around the usag
 
 The documentation for **RealtimeTTS** is available in the following languages:
 
-- **[English](https://koljab.github.io/RealtimeTTS/en/)**
-- **[French](https://koljab.github.io/RealtimeTTS/fr/)**
-- **[Spanish](https://koljab.github.io/RealtimeTTS/es/)**
-- **[German](https://koljab.github.io/RealtimeTTS/de/)**
-- **[Italian](https://koljab.github.io/RealtimeTTS/it/)**
-- **[Chinese](https://koljab.github.io/RealtimeTTS/zh/)**
-- **[Japanese](https://koljab.github.io/RealtimeTTS/ja/)**
-- **[Hindi](https://koljab.github.io/RealtimeTTS/hi/)**
-- **[Korean](https://koljab.github.io/RealtimeTTS/ko/)**
+- **[English]()**
+- **[French]()**
+- **[Spanish]()**
+- **[German]()**
+- **[Italian]()**
+- **[Chinese]()**
+- **[Japanese]()**
+- **[Hindi]()**
+- **[Korean]()**
 
 ---
 
@@ -62,11 +56,11 @@ Latest Version: v0.5.5
 
 - **New Engine:** OrpheusEngine
   - **Installation:** `pip install RealtimeTTS[orpheus]
-  - **Test File Example:** [orpheus_test.py](https://github.com/KoljaB/RealtimeTTS/blob/master/tests/orpheus_test.py)
+  - **Test File Example:** [orpheus_test.py](https://github.com/yosuke-kuroki/RealtimeTTS/blob/master/tests/orpheus_test.py)
 
 - **New Engine:** KokoroEngine
   - **Installation:** `pip install RealtimeTTS[kokoro]
-  - **Test File Example:** [kokoro_test.py](https://github.com/KoljaB/RealtimeTTS/blob/master/tests/kokoro_test.py)
+  - **Test File Example:** [kokoro_test.py](https://github.com/yosuke-kuroki/RealtimeTTS/blob/master/tests/kokoro_test.py)
 
 Support for more kokoro languages. Full installation for also japanese and chinese languages (see updated test file): 
 ```shell
@@ -79,11 +73,6 @@ pip uninstall jieba jieba3k
 pip install jieba
 ```
 
-
-- **New Engine:** PiperEngine
-  - **Installation Tutorial:** [Watch on YouTube](https://www.youtube.com/watch?v=GGvdq3giiTQ)
-  - **Test File Example:** [piper_test.py](https://github.com/KoljaB/RealtimeTTS/blob/master/tests/piper_test.py)
-
 StyleTTS2 engine:
 
 https://github.com/user-attachments/assets/d1634012-ba53-4445-a43a-7042826eedd7
@@ -92,7 +81,7 @@ EdgeTTS engine:
 
 https://github.com/user-attachments/assets/73ec6258-23ba-4bc6-acc7-7351a13c5509
 
-See [release history](https://github.com/KoljaB/RealtimeTTS/releases).
+See [release history](https://github.com/yosuke-kuroki/RealtimeTTS/releases).
 
 Added ParlerEngine. Needs flash attention, then barely runs fast enough for realtime inference on a 4090.
 
@@ -215,7 +204,6 @@ For the `ElevenlabsEngine`, you need:
 **PiperEngine** offers high-quality, real-time text-to-speech synthesis using the Piper model.
 
 - **Separate Installation:**
-  - Piper must be installed independently from RealtimeTTS. Follow the [Piper installation tutorial for Windows](https://www.youtube.com/watch?v=GGvdq3giiTQ).
 
 - **Configuration:**
   - Provide the correct paths to the Piper executable and voice model files when initializing `PiperEngine`.
@@ -765,19 +753,4 @@ While the source of this library is open-source, the usage of many of the engine
 
 **Disclaimer**: This is a summarization of the licenses as understood at the time of writing. It is not legal advice. Please read and respect the licenses of the different engine providers if you plan to use them in a project.
 
-## Contributors
 
-<a href="https://github.com/traceloop/openllmetry/graphs/contributors">
-  <img alt="contributors" src="https://contrib.rocks/image?repo=KoljaB/RealtimeTTS"/>
-</a>
-
-## Author
-
-Kolja Beigel
-Email: kolja.beigel@web.de
-
-<p align="center">
-  <a href="#realtimetts" target="_blank">
-    <img src="https://img.shields.io/badge/Back%20to%20Top-000000?style=for-the-badge" alt="Back to Top">
-  </a>
-</p>
